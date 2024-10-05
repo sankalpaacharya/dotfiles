@@ -225,4 +225,4 @@ bindsym Ctrl+$mod+Print exec --no-startup-id maim --format=png --window $(xdotoo
 bindsym Ctrl+Shift+Print exec --no-startup-id maim --format=png --select | xclip -selection clipboard -t image/png
 
 
-
+exec_always polybar mybar --config=~/.config/polybar/config.ini
