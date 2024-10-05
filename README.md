@@ -1,0 +1,6 @@
+# Installation
+
+```
+git clone
+stow .
+```
