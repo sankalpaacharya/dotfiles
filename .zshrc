@@ -3,6 +3,10 @@
 autoload -U colors && colors
 PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 
+#colors 
+export LS_COLORS="di=1;34:ln=1;36:so=1;35:pi=33:ex=1;32:bd=46;30:cd=43;30:su=41;30:sg=46;30:tw=42;30:ow=43;30"
+alias ls='ls --color=auto'
+
 # History in cache directory:
 HISTSIZE=10000
 SAVEHIST=10000
