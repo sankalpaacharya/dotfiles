@@ -30,6 +30,11 @@ fzf_open_in_vscode() {
   folder=$(find . -type d | fzf) && code "$folder"
 }
 
+tmux-session-switcher() {
+    BUFFER="tmux attach -t $(tmux list-sessions | awk -F: '{print $1}' | fzf)"
+    zle accept-line
+}
+
 # Use vim keys in tab complete menu:
 bindkey -M menuselect 'h' vi-backward-char
 bindkey -M menuselect 'k' vi-up-line-or-history
@@ -38,9 +43,14 @@ bindkey -M menuselect 'j' vi-down-line-or-history
 bindkey -v '^?' backward-delete-char
 bindkey '^[^?' backward-kill-word
 bindkey '^A' beginning-of-line
-bindkey '^[[1;5D' backward-word    # Bind Ctrl + Left Arrow to move one word back
+bindkey '^[[1;5D' backward-word    # Bind Ctrl + Left Arrow to eove one word back
 bindkey '^[[1;5C' forward-word     # Bind Ctrl + Right Arrow to move one word forward
 bindkey -s '^F' 'fzf_open_in_vscode\n'
+bindkey '^P' tmux-session-switcher   
+zle -N tmux-session-switcher    
+
+
+
 
 # Change cursor shape for different vi modes.
 function zle-keymap-select {
@@ -98,3 +108,33 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion 
 
 export PATH="$PATH:/opt/nvim-linux64/bin"
+
+
+# Generated for envman. Do not edit.
+[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
+
+# pnpm
+export PNPM_HOME="/home/sanku/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+
+# ------ for hadoop ---- 
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64 
+export PATH=$PATH:/usr/lib/jvm/java-8-openjdk-amd64/bin 
+
+export HADOOP_HOME=~/hadoop-3.4.1/ 
+export PATH=$PATH:$HADOOP_HOME/bin 
+export PATH=$PATH:$HADOOP_HOME/sbin 
+
+export HADOOP_MAPRED_HOME=$HADOOP_HOME 
+export YARN_HOME=$HADOOP_HOME 
+export HADOOP_CONF_DIR=$HADOOP_HOME/etc/hadoop 
+export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_HOME/lib/native 
+export HADOOP_OPTS="-Djava.library.path=$HADOOP_HOME/lib/native" 
+
+export HADOOP_STREAMING=$HADOOP_HOME/share/hadoop/tools/lib/hadoop-streaming-3.4.1.jar
+export HADOOP_LOG_DIR=$HADOOP_HOME/logs 
+export PDSH_RCMD_TYPE=ssh
+# ------ for hadoop ---- 

@@ -13,6 +13,7 @@
 gaps inner 0
 gaps outer 0
 
+
 set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -55,7 +56,7 @@ bindsym $mod+Return exec kitty
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id dmenu_run
+bindsym $mod+d exec --no-startup-id ~/.config/rofi/launchers/type-3/launcher.sh
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -203,10 +204,10 @@ bindsym $mod+r mode "resize"
 for_window [class="^.*"] border pixel 0 
 
 # wallpaper
-exec_always --no-startup-id feh --bg-scale ~/.config/i3/wallpaper/zoro.jpg
-# exec_always feh bg-scale ~/.config/i3/wallpaper/nepal.jpg
+#exec_always --no-startup-id feh --bg-scale ~/.config/i3/wallpaper/linus.png
+exec_always --no-startup-id feh --bg-scale ~/.config/i3/wallpaper/nepal.jpg
 
-exec --no-startup-id picom
+exec_always --no-startup-id picom
 exec firefox
 exec code
 exec kitty
@@ -226,4 +227,5 @@ bindsym Ctrl+$mod+Print exec --no-startup-id maim --format=png --window $(xdotoo
 bindsym Ctrl+Shift+Print exec --no-startup-id maim --format=png --select | xclip -selection clipboard -t image/png
 
 
-exec_always polybar mybar --config=~/.config/polybar/config.ini
+# exec_always polybar mybar --config=~/.config/polybar/config.ini
+exec_always --no-startup-id xinput set-prop 12 "libinput Natural Scrolling Enabled" 0
