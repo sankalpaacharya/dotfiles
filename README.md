@@ -1,5 +1,7 @@
 # Installation
 
+
+ARCH setup!
 Dotfiles Location 
 ```
 cd ~
