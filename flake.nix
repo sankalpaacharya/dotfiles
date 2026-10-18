@@ -14,8 +14,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # Pins Homebrew itself. homebrew-core/cask are deliberately not pinned so
-    # brew keeps resolving formulae and casks over its JSON API.
     nix-homebrew.url = "github:zhaofengli/nix-homebrew";
   };
 
@@ -31,8 +29,6 @@
       pkgs = nixpkgs.legacyPackages.${system};
       me = import ./me.nix;
 
-      # One line per machine. The attr name must match the lowercased
-      # LocalHostName (`scutil --get LocalHostName`) so `just switch` finds it.
       mkDarwinHost =
         hostName:
         nix-darwin.lib.darwinSystem {

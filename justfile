@@ -1,6 +1,3 @@
-# Task runner for this flake. `just` with no arguments lists everything.
-
-# Which darwinConfigurations attr to build: this Mac's LocalHostName, lowercased.
 host := env_var_or_default("FLAKE_HOST", lowercase(`scutil --get LocalHostName`))
 
 _default:
