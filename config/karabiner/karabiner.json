@@ -193,7 +193,7 @@
                 },
                 "to": [
                   {
-                    "shell_command": "osascript -e 'tell application \"T3 Code (Nightly)\" to activate'"
+                    "shell_command": "osascript -e 'tell application \"bb\" to activate'"
                   }
                 ],
                 "conditions": [

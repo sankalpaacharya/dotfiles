@@ -81,7 +81,6 @@
       "docker-desktop"
       "ghostty"
       "stats"
-      "t3-code"
       "visual-studio-code"
       "vlc"
       "whatsapp"
