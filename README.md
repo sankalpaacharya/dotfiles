@@ -1,6 +1,6 @@
 # Dotfiles
 
-Declarative macOS setup with [nix-darwin](https://github.com/nix-darwin/nix-darwin) + [home-manager](https://github.com/nix-community/home-manager) + [nix-homebrew](https://github.com/zhaofengli/nix-homebrew) on [Determinate Nix](https://determinate.systems). My old Arch Linux (i3) configs live in [`linux/`](linux).
+Declarative macOS setup with [nix-darwin](https://github.com/nix-darwin/nix-darwin) + [home-manager](https://github.com/nix-community/home-manager) + [nix-homebrew](https://github.com/zhaofengli/nix-homebrew) on [Determinate Nix](https://determinate.systems).
 
 Structure borrowed from [dillionverma/dotfiles](https://github.com/dillionverma/dotfiles).
 
@@ -33,7 +33,6 @@ just gc         # reclaim the Nix store
 | `darwin.nix`        | Homebrew casks, App Store apps, macOS defaults, app preferences |
 | `home.nix`          | CLI tools, zsh, git/gh, app config links                        |
 | `config/karabiner/` | Caps Lock layer (linked live, so Karabiner's UI saves here)     |
-| `linux/`            | Arch setup — `cd linux && stow -t ~ .`                          |
 
 ## Keyboard
 
