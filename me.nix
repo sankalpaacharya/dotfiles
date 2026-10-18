@@ -1,4 +1,3 @@
-# Who this machine belongs to. The only file to edit when forking.
 {
   username = "sanku";
   fullName = "Sankalpa Acharya";
