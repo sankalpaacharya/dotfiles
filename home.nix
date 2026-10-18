@@ -18,6 +18,7 @@ in
   home.stateVersion = "25.05";
 
   home.packages = with pkgs; [
+    just # runs the justfile recipes (`just switch`)
     nodejs
   ];
 
