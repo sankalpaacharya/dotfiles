@@ -147,7 +147,7 @@
                 },
                 "to": [
                   {
-                    "shell_command": "osascript -e 'tell application \"Arc\" to activate'"
+                    "shell_command": "osascript ~/.config/karabiner/focus-app.applescript"
                   }
                 ],
                 "conditions": [
@@ -170,7 +170,7 @@
                 },
                 "to": [
                   {
-                    "shell_command": "osascript -e 'tell application \"Claude\" to activate'"
+                    "shell_command": "osascript ~/.config/karabiner/focus-app.applescript Claude"
                   }
                 ],
                 "conditions": [
@@ -193,7 +193,7 @@
                 },
                 "to": [
                   {
-                    "shell_command": "osascript -e 'tell application \"bb\" to activate'"
+                    "shell_command": "osascript ~/.config/karabiner/focus-app.applescript bb"
                   }
                 ],
                 "conditions": [
@@ -216,7 +216,7 @@
                 },
                 "to": [
                   {
-                    "shell_command": "osascript -e 'tell application \"Visual Studio Code\" to activate'"
+                    "shell_command": "osascript ~/.config/karabiner/focus-app.applescript 'Visual Studio Code'"
                   }
                 ],
                 "conditions": [
@@ -239,7 +239,7 @@
                 },
                 "to": [
                   {
-                    "shell_command": "osascript -e 'tell application \"Ghostty\" to activate'"
+                    "shell_command": "osascript ~/.config/karabiner/focus-app.applescript Ghostty"
                   }
                 ],
                 "conditions": [
@@ -262,7 +262,7 @@
                 },
                 "to": [
                   {
-                    "shell_command": "osascript -e 'tell application \"Finder\" to activate'"
+                    "shell_command": "osascript ~/.config/karabiner/focus-app.applescript Finder"
                   }
                 ],
                 "conditions": [
@@ -285,7 +285,7 @@
                 },
                 "to": [
                   {
-                    "shell_command": "osascript -e 'tell application \"WhatsApp\" to activate'"
+                    "shell_command": "osascript ~/.config/karabiner/focus-app.applescript WhatsApp"
                   }
                 ],
                 "conditions": [
@@ -308,7 +308,7 @@
                 },
                 "to": [
                   {
-                    "shell_command": "osascript -e 'tell application \"Xcode\" to activate'"
+                    "shell_command": "osascript ~/.config/karabiner/focus-app.applescript Xcode"
                   }
                 ],
                 "conditions": [
@@ -331,7 +331,7 @@
                 },
                 "to": [
                   {
-                    "shell_command": "osascript -e 'tell application \"Zed\" to activate'"
+                    "shell_command": "osascript ~/.config/karabiner/focus-app.applescript Zed"
                   }
                 ],
                 "conditions": [
@@ -354,7 +354,7 @@
                 },
                 "to": [
                   {
-                    "shell_command": "osascript -e 'tell application \"Discord\" to activate'"
+                    "shell_command": "osascript ~/.config/karabiner/focus-app.applescript Discord"
                   }
                 ],
                 "conditions": [
