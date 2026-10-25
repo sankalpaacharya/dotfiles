@@ -147,7 +147,11 @@
                 },
                 "to": [
                   {
-                    "shell_command": "osascript ~/.config/karabiner/focus-app.applescript"
+                    "software_function": {
+                      "open_application": {
+                        "bundle_identifier": "at.studio.AsideBrowser"
+                      }
+                    }
                   }
                 ],
                 "conditions": [
@@ -170,7 +174,11 @@
                 },
                 "to": [
                   {
-                    "shell_command": "osascript ~/.config/karabiner/focus-app.applescript Claude"
+                    "software_function": {
+                      "open_application": {
+                        "bundle_identifier": "com.anthropic.claudefordesktop"
+                      }
+                    }
                   }
                 ],
                 "conditions": [
@@ -193,7 +201,11 @@
                 },
                 "to": [
                   {
-                    "shell_command": "osascript ~/.config/karabiner/focus-app.applescript bb"
+                    "software_function": {
+                      "open_application": {
+                        "bundle_identifier": "dev.bb.desktop"
+                      }
+                    }
                   }
                 ],
                 "conditions": [
@@ -216,7 +228,11 @@
                 },
                 "to": [
                   {
-                    "shell_command": "osascript ~/.config/karabiner/focus-app.applescript 'Visual Studio Code'"
+                    "software_function": {
+                      "open_application": {
+                        "bundle_identifier": "com.microsoft.VSCode"
+                      }
+                    }
                   }
                 ],
                 "conditions": [
@@ -239,7 +255,11 @@
                 },
                 "to": [
                   {
-                    "shell_command": "osascript ~/.config/karabiner/focus-app.applescript Ghostty"
+                    "software_function": {
+                      "open_application": {
+                        "bundle_identifier": "com.mitchellh.ghostty"
+                      }
+                    }
                   }
                 ],
                 "conditions": [
@@ -262,7 +282,11 @@
                 },
                 "to": [
                   {
-                    "shell_command": "osascript ~/.config/karabiner/focus-app.applescript Finder"
+                    "software_function": {
+                      "open_application": {
+                        "bundle_identifier": "com.apple.finder"
+                      }
+                    }
                   }
                 ],
                 "conditions": [
@@ -285,7 +309,11 @@
                 },
                 "to": [
                   {
-                    "shell_command": "osascript ~/.config/karabiner/focus-app.applescript WhatsApp"
+                    "software_function": {
+                      "open_application": {
+                        "bundle_identifier": "net.whatsapp.WhatsApp"
+                      }
+                    }
                   }
                 ],
                 "conditions": [
@@ -308,7 +336,11 @@
                 },
                 "to": [
                   {
-                    "shell_command": "osascript ~/.config/karabiner/focus-app.applescript Xcode"
+                    "software_function": {
+                      "open_application": {
+                        "bundle_identifier": "com.apple.dt.Xcode"
+                      }
+                    }
                   }
                 ],
                 "conditions": [
@@ -331,7 +363,11 @@
                 },
                 "to": [
                   {
-                    "shell_command": "osascript ~/.config/karabiner/focus-app.applescript Zed"
+                    "software_function": {
+                      "open_application": {
+                        "bundle_identifier": "dev.zed.Zed"
+                      }
+                    }
                   }
                 ],
                 "conditions": [
@@ -354,7 +390,11 @@
                 },
                 "to": [
                   {
-                    "shell_command": "osascript ~/.config/karabiner/focus-app.applescript Discord"
+                    "software_function": {
+                      "open_application": {
+                        "bundle_identifier": "com.hnc.Discord"
+                      }
+                    }
                   }
                 ],
                 "conditions": [
